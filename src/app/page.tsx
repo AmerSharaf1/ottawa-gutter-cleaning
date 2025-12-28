@@ -27,21 +27,21 @@ export default function Home() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-blue-800 transition">Home</a>
-              <a href="#services" className="text-gray-700 hover:text-blue-800 transition">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-800 transition">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-800 transition">Contact</a>
+              <a href="#home" className="text-[#1e3a5f] hover:text-[#0ea5e9] font-medium transition">Home</a>
+              <a href="#services" className="text-[#1e3a5f] hover:text-[#0ea5e9] font-medium transition">Services</a>
+              <a href="#about" className="text-[#1e3a5f] hover:text-[#0ea5e9] font-medium transition">About</a>
+              <a href="#contact" className="text-[#1e3a5f] hover:text-[#0ea5e9] font-medium transition">Contact</a>
             </div>
 
             <div className="hidden md:block">
-              <a href="tel:819-328-1394" className="bg-blue-800 text-white px-6 py-2 rounded-full hover:bg-blue-900 transition">
+              <a href="tel:819-328-1394" className="bg-[#f97316] text-white px-6 py-2 rounded-full hover:bg-[#ea580c] font-semibold transition shadow-lg">
                 Call Now
               </a>
             </div>
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-2 text-[#1e3a5f]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,11 +57,11 @@ export default function Home() {
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden pb-4">
-              <a href="#home" className="block py-2 text-gray-700 hover:text-blue-800" onClick={() => setMobileMenuOpen(false)}>Home</a>
-              <a href="#services" className="block py-2 text-gray-700 hover:text-blue-800" onClick={() => setMobileMenuOpen(false)}>Services</a>
-              <a href="#about" className="block py-2 text-gray-700 hover:text-blue-800" onClick={() => setMobileMenuOpen(false)}>About</a>
-              <a href="#contact" className="block py-2 text-gray-700 hover:text-blue-800" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-              <a href="tel:819-328-1394" className="block mt-2 bg-blue-800 text-white px-6 py-2 rounded-full text-center hover:bg-blue-900 transition">
+              <a href="#home" className="block py-2 text-[#1e3a5f] hover:text-[#0ea5e9] font-medium" onClick={() => setMobileMenuOpen(false)}>Home</a>
+              <a href="#services" className="block py-2 text-[#1e3a5f] hover:text-[#0ea5e9] font-medium" onClick={() => setMobileMenuOpen(false)}>Services</a>
+              <a href="#about" className="block py-2 text-[#1e3a5f] hover:text-[#0ea5e9] font-medium" onClick={() => setMobileMenuOpen(false)}>About</a>
+              <a href="#contact" className="block py-2 text-[#1e3a5f] hover:text-[#0ea5e9] font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+              <a href="tel:819-328-1394" className="block mt-2 bg-[#f97316] text-white px-6 py-2 rounded-full text-center hover:bg-[#ea580c] font-semibold transition">
                 Call Now
               </a>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+      <section id="home" className="pt-20 bg-gradient-to-br from-[#152a45] via-[#1e3a5f] to-[#0891b2] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center">
             <div className="flex justify-center mb-8">
@@ -79,33 +79,33 @@ export default function Home() {
                 alt="Ottawa Gutter Cleaning & Exterior Services"
                 width={400}
                 height={200}
-                className="h-auto w-64 md:w-96 bg-white rounded-2xl p-4"
+                className="h-auto w-64 md:w-96 bg-white rounded-2xl p-4 shadow-2xl"
               />
             </div>
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
               Professional Gutter Services in Ottawa
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-[#e0f2fe] max-w-3xl mx-auto">
               Professional gutter cleaning, repair, and pressure washing services to protect your home from water damage
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="bg-white text-blue-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition">
+              <a href="#contact" className="bg-[#f97316] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#ea580c] transition shadow-lg">
                 Get a Free Quote
               </a>
-              <a href="tel:819-328-1394" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-800 transition">
+              <a href="tel:819-328-1394" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#1e3a5f] transition">
                 Call 819-328-1394
               </a>
             </div>
           </div>
         </div>
-        <div className="h-16 bg-gradient-to-b from-blue-700 to-white"></div>
+        <div className="h-16 bg-gradient-to-b from-[#0891b2] to-white"></div>
       </section>
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">Our Services</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We offer comprehensive exterior services to keep your home looking great and protected from the elements
             </p>
@@ -113,40 +113,40 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Gutter Cleaning */}
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-[#f8fafc] rounded-2xl p-8 text-center hover:shadow-xl transition border border-gray-100">
+              <div className="w-16 h-16 bg-[#e0f2fe] rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-[#0891b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Gutter Cleaning</h3>
+              <h3 className="text-xl font-bold text-[#1e3a5f] mb-4">Gutter Cleaning</h3>
               <p className="text-gray-600">
                 Remove leaves, debris, and buildup from your gutters to ensure proper water flow and prevent damage to your home&apos;s foundation.
               </p>
             </div>
 
             {/* Gutter Repair */}
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-[#f8fafc] rounded-2xl p-8 text-center hover:shadow-xl transition border border-gray-100">
+              <div className="w-16 h-16 bg-[#e0f2fe] rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-[#0891b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Gutter Repair</h3>
+              <h3 className="text-xl font-bold text-[#1e3a5f] mb-4">Gutter Repair</h3>
               <p className="text-gray-600">
                 Fix leaks, sagging gutters, and damaged sections to restore your gutter system to optimal working condition.
               </p>
             </div>
 
             {/* Pressure Washing */}
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-[#f8fafc] rounded-2xl p-8 text-center hover:shadow-xl transition border border-gray-100">
+              <div className="w-16 h-16 bg-[#e0f2fe] rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-[#0891b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Pressure Washing</h3>
+              <h3 className="text-xl font-bold text-[#1e3a5f] mb-4">Pressure Washing</h3>
               <p className="text-gray-600">
                 Deep clean your driveway, deck, siding, and other exterior surfaces to remove dirt, mold, and stains.
               </p>
@@ -156,27 +156,27 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#f8fafc]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">Why Choose Us?</h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">100%</div>
+              <div className="text-4xl font-bold text-[#0891b2] mb-2">100%</div>
               <p className="text-gray-600">Satisfaction Guaranteed</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">Fast</div>
+              <div className="text-4xl font-bold text-[#0891b2] mb-2">Fast</div>
               <p className="text-gray-600">Same-Week Service</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">Free</div>
+              <div className="text-4xl font-bold text-[#0891b2] mb-2">Free</div>
               <p className="text-gray-600">No-Obligation Quotes</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">Local</div>
+              <div className="text-4xl font-bold text-[#0891b2] mb-2">Local</div>
               <p className="text-gray-600">Ottawa Owned & Operated</p>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-6">
                 Your Trusted Ottawa Gutter Experts
               </h2>
               <p className="text-lg text-gray-600 mb-6">
@@ -199,31 +199,31 @@ export default function Home() {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-gray-700">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-[#0891b2] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   Fully insured for your peace of mind
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-[#0891b2] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   Professional and courteous service
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 text-[#0891b2] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   Competitive pricing with no hidden fees
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-blue-800 to-blue-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-[#1e3a5f] to-[#0891b2] rounded-2xl p-8 text-white shadow-xl">
               <h3 className="text-2xl font-bold mb-6">Service Area</h3>
-              <p className="text-blue-100 mb-4">
+              <p className="text-[#e0f2fe] mb-4">
                 We proudly serve homeowners throughout the Ottawa region, including:
               </p>
-              <ul className="space-y-2 text-blue-100">
+              <ul className="space-y-2 text-[#e0f2fe]">
                 <li>• Downtown Ottawa</li>
                 <li>• Kanata</li>
                 <li>• Barrhaven</li>
@@ -238,11 +238,11 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
+      <section id="contact" className="py-20 bg-[#1e3a5f] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Your Free Quote Today</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-[#e0f2fe] max-w-2xl mx-auto">
               Ready to protect your home? Contact us today for a free, no-obligation quote.
             </p>
           </div>
@@ -252,35 +252,35 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#0891b2] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Phone</h4>
-                    <a href="tel:819-328-1394" className="text-blue-400 hover:text-blue-300 text-lg">
+                    <a href="tel:819-328-1394" className="text-[#f97316] hover:text-[#ea580c] text-xl font-bold">
                       819-328-1394
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#0891b2] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
-                    <a href="mailto:ameer.sharaf10@gmail.com" className="text-blue-400 hover:text-blue-300">
+                    <a href="mailto:ameer.sharaf10@gmail.com" className="text-[#0ea5e9] hover:text-[#e0f2fe]">
                       ameer.sharaf10@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#0891b2] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -288,13 +288,21 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Service Area</h4>
-                    <p className="text-gray-300">Ottawa and surrounding areas</p>
+                    <p className="text-[#e0f2fe]">Ottawa and surrounding areas</p>
                   </div>
                 </div>
               </div>
+
+              {/* Call to Action Box */}
+              <div className="mt-8 bg-[#f97316] rounded-2xl p-6 text-center">
+                <p className="text-lg font-semibold mb-2">Ready to get started?</p>
+                <a href="tel:819-328-1394" className="text-2xl font-bold hover:underline">
+                  Call 819-328-1394
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 text-gray-900">
+            <div className="bg-white rounded-2xl p-8 text-[#1e3a5f] shadow-xl">
               <h3 className="text-2xl font-bold mb-6">Request a Quote</h3>
               <form className="space-y-4">
                 <div>
@@ -303,7 +311,7 @@ export default function Home() {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
@@ -313,7 +321,7 @@ export default function Home() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -323,7 +331,7 @@ export default function Home() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -332,7 +340,7 @@ export default function Home() {
                   <select
                     id="service"
                     name="service"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
                   >
                     <option value="">Select a service</option>
                     <option value="gutter-cleaning">Gutter Cleaning</option>
@@ -347,13 +355,13 @@ export default function Home() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
                     placeholder="Tell us about your project..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-800 text-white py-4 rounded-lg font-semibold hover:bg-blue-900 transition"
+                  className="w-full bg-[#f97316] text-white py-4 rounded-lg font-semibold hover:bg-[#ea580c] transition shadow-lg"
                 >
                   Send Message
                 </button>
@@ -364,7 +372,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-950 text-gray-400 py-12">
+      <footer className="bg-[#152a45] text-gray-300 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -382,21 +390,21 @@ export default function Home() {
             <div>
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#services" className="hover:text-white transition">Gutter Cleaning</a></li>
-                <li><a href="#services" className="hover:text-white transition">Gutter Repair</a></li>
-                <li><a href="#services" className="hover:text-white transition">Pressure Washing</a></li>
+                <li><a href="#services" className="hover:text-[#0ea5e9] transition">Gutter Cleaning</a></li>
+                <li><a href="#services" className="hover:text-[#0ea5e9] transition">Gutter Repair</a></li>
+                <li><a href="#services" className="hover:text-[#0ea5e9] transition">Pressure Washing</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="tel:819-328-1394" className="hover:text-white transition">819-328-1394</a></li>
-                <li><a href="mailto:ameer.sharaf10@gmail.com" className="hover:text-white transition">ameer.sharaf10@gmail.com</a></li>
+                <li><a href="tel:819-328-1394" className="text-[#f97316] hover:text-[#ea580c] font-semibold transition">819-328-1394</a></li>
+                <li><a href="mailto:ameer.sharaf10@gmail.com" className="hover:text-[#0ea5e9] transition">ameer.sharaf10@gmail.com</a></li>
                 <li>Ottawa, Ontario</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
             <p>&copy; {new Date().getFullYear()} Ottawa Gutter Cleaning & Exterior Services. All rights reserved.</p>
           </div>
         </div>

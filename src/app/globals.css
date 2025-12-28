@@ -1,19 +1,35 @@
 @import "tailwindcss";
 
 :root {
+  /* The Trusted Professional Palette */
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #1e40af;
-  --primary-dark: #1e3a8a;
-  --secondary: #059669;
+  --background-light: #f8fafc;
+  --foreground: #1e3a5f;
+
+  /* Primary: Deep Navy / Royal Blue - Trust & Reliability */
+  --navy: #1e3a5f;
+  --navy-dark: #152a45;
+  --royal-blue: #1e40af;
+
+  /* Secondary: Bright Cyan / Sky Blue - Clean & Fresh */
+  --cyan: #0891b2;
+  --sky-blue: #0ea5e9;
+  --light-blue: #e0f2fe;
+
+  /* Action: Safety Orange - High Contrast CTAs */
+  --orange: #f97316;
+  --orange-hover: #ea580c;
+  --golden: #eab308;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-dark: var(--primary-dark);
-  --color-secondary: var(--secondary);
+  --color-navy: var(--navy);
+  --color-navy-dark: var(--navy-dark);
+  --color-cyan: var(--cyan);
+  --color-sky-blue: var(--sky-blue);
+  --color-orange: var(--orange);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
