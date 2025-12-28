@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,11 +11,18 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-blue-800">
-                Ottawa Gutter Cleaning
-              </h1>
+              <a href="#home">
+                <Image
+                  src="/logo.png"
+                  alt="Ottawa Gutter Cleaning & Exterior Services"
+                  width={180}
+                  height={60}
+                  className="h-14 w-auto"
+                  priority
+                />
+              </a>
             </div>
 
             {/* Desktop Navigation */}
@@ -62,11 +70,20 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section id="home" className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Ottawa Gutter Cleaning & Exterior Services
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/logo.png"
+                alt="Ottawa Gutter Cleaning & Exterior Services"
+                width={400}
+                height={200}
+                className="h-auto w-64 md:w-96 bg-white rounded-2xl p-4"
+              />
+            </div>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+              Professional Gutter Services in Ottawa
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
               Professional gutter cleaning, repair, and pressure washing services to protect your home from water damage
@@ -351,7 +368,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-white text-lg font-bold mb-4">Ottawa Gutter Cleaning & Exterior Services</h3>
+              <Image
+                src="/logo.png"
+                alt="Ottawa Gutter Cleaning & Exterior Services"
+                width={200}
+                height={80}
+                className="h-16 w-auto mb-4 bg-white rounded-lg p-2"
+              />
               <p className="text-sm">
                 Professional gutter cleaning, repair, and pressure washing services in Ottawa.
               </p>
