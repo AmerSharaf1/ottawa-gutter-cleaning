@@ -74,7 +74,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
-              Professional Gutter Services in Ottawa
+              Professional Gutter Services in Ottawa - TEST
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-[#e0f2fe] max-w-3xl mx-auto">
               Professional gutter cleaning, repair, and pressure washing services to protect your home from water damage
