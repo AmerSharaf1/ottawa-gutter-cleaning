@@ -73,15 +73,6 @@ export default function Home() {
       <section id="home" className="pt-20 bg-gradient-to-br from-[#152a45] via-[#1e3a5f] to-[#0891b2] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center">
-            <div className="flex justify-center mb-8">
-              <Image
-                src="/logo.png"
-                alt="Ottawa Gutter Cleaning & Exterior Services"
-                width={400}
-                height={200}
-                className="h-auto w-64 md:w-96 bg-white rounded-2xl p-4 shadow-2xl"
-              />
-            </div>
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
               Professional Gutter Services in Ottawa
             </h1>
